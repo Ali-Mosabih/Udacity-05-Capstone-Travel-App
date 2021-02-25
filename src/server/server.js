@@ -58,7 +58,7 @@ app.post('/destination-forecast', async function(req, res) {
     // console.log(req.body);
     const forecast = req.body
     // console.log(forecast);
-    // building the GEONAMES URL
+    // building the WeatherBIT URL
     weatherBITUrl = `${API.WEATHERBIT_API_URL}&lat=${forecast.lat}&lon=${forecast.lng}&days=3&key=${API.WEATHERBIT_API_KEY}`;
     const result = await fetch(weatherBITUrl);
     const weathernData = await result.json();
@@ -77,6 +77,7 @@ app.post('/destination-forecast', async function(req, res) {
 app.post('/destination-picture', async function(req, res) {
     const destination = req.body.destination;
     // console.log(destination)
+    // building the Pixabay URL
     pixabayUrl = `${API.PIXABAY_API_URL}key=${API.PIXABAY_API_KEY}&q=${destination}&image_type=photo&orientation=horizontal&per_page=3&pretty=true`;
     const result = await fetch(pixabayUrl);
     const destinationPictures = await result.json();
