@@ -2,7 +2,7 @@
 
 Udacity FEND Program - 5th Project
 
-The project aims to help the user to get information about his destination and plan for his trip from 3 different APIs Geonames, WeatherBIT, and Pixabay.
+The project aims to help the user to plan for his trip and get information about his destination from 3 different APIs Geonames, WeatherBIT, and Pixabay.
 
 ## How to use the projrct
 <ol>
