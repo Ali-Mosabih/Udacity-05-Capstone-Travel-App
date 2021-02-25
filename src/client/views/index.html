@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Travel App</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+
+    <main class="background">
+        <h1>Find Your Trip</h1>
+
+        <section>
+            <form id="tripForm">
+                <label for="destination">Your Destination</label>
+                <input id="destination" type="text" placeholder="Enter a city">
+                <label for="checkIn">Check In</label>
+                <input id="checkIn" type="date" placeholder="dd/mm/yyyy">
+                <label for="checkOut">Check Out</label>
+                <input id="checkOut" type="date" placeholder="dd/mm/yyyy">
+                <button>Check</button>
+            </form>
+        </section>
+
+        <section id="tripInfo">
+
+        </section>
+
+        <section id="savedTrips">
+            <!-- <div id="trip"></div> -->
+        </section>
+
+        <script>
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                    navigator.serviceWorker.register('/service-worker.js')
+                        .then(reg => {
+                            console.log('service worker registered  successfully')
+                        }).catch(error => {
+                            console.log('error: ', error);
+                        })
+                });
+            }
+        </script>
+    </main>
+</body>
+
+</html>

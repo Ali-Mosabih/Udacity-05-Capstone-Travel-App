@@ -1,0 +1,62 @@
+form {
+    border: .5px solid #545454;
+    border-radius: 9px;
+    padding: 40px;
+    width: 60ch;
+    // margin: 0px 5rem;
+    margin: auto;
+    // text-align: center;
+    background-color: rgba(236, 231, 223, 0.918);
+    box-shadow: 1px 8px 15px rgba(0, 0, 0, 0.308);
+
+    #destinationTitle {
+        font-size: 1.3rem;
+        margin-bottom: 8px;
+    }
+
+    h2 {
+        font-weight: bold;
+    }
+
+    p {
+        font-weight: bold;
+        font-size: 1.1rem;
+        margin: 3px 0px;
+    }
+
+    input {
+        padding: 5px 20px;
+        width: 100%;
+        line-height: 16px;
+        margin: 10px 0;
+    }
+
+    button {
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: rgb(243, 243, 243);
+        padding: 3px 8px;
+        margin: 15px 0px 0px 0px;
+        cursor: pointer;
+        width: 100%;
+        line-height: 20px;
+    }
+    
+    button:hover {
+        background-color: rgb(230, 230, 230);
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .row {
+        display: flex;
+        margin-bottom: 8px;
+    }
+    
+    .col {
+        // border: 1px solid black;
+        flex: 50%;
+      }
+}
