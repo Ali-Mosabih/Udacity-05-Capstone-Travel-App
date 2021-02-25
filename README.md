@@ -8,7 +8,7 @@ The project aims to help the user to get information about his destination and p
 <ol>
   <li>clone the repostory</li>
   <li>run npm install</li>
-  <li>run npm build-prod => to build the project as a product</li>
-  <li>run npm start => to run the server</li>
-  <li>run npm build-dev => to run webpack-dev-server</li>
+  <li>npm run build-prod => to build the project as a product</li>
+  <li>npm run start => to run the server</li>
+  <li>npm run build-dev => to run webpack-dev-server</li>
 </ol>
